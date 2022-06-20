@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import avatar from '../../assets/images/avatar.jpg';
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
@@ -38,7 +39,34 @@ export const HeroContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+`;
+
+export const HeroWrapContent = styled.div`
+    display: flex;
+
+    @media screen and (max-width: 768px){
+        display: block
+    }
+
+    @media screen and (max-width: 480px){
+        display: block
+    }
+`;
+
+export const HeroImage = styled.img`
+    height: 480px;
+    width: 360px;
+    margin-right: 120px;
+
+    @media screen and (max-width: 768px){
+        height: 480px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 480px){
+        height: 480px;
+        width: 100%;
+    }
 `;
 
 export const HeroH1 = styled.h1`
